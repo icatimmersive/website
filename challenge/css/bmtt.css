@@ -1,0 +1,166 @@
+/* bibtex bibliography style */
+@import url("bibtex.css");
+
+
+/* Generic Table Settings */
+/* PLEASE ADJUST TO OVERALL SCHEME! */
+.Table{
+/* 	width:80%;  */
+/* 	border-collapse:collapse;  */
+}
+.Table td{ 
+	padding:7px; border:#4e95f4 1px solid;
+}
+/* provide some minimal visual accomodation for IE8 and below */
+.Table tr{
+	background: #b8d1f3;
+}
+/*  Define the background color for all the ODD background rows  */
+.Table tr:nth-child(odd){ 
+	background: #b8d1f3;
+}
+/*  Define the background color for all the EVEN background rows  */
+.Table tr:nth-child(even){
+	background: #dae5f4;
+}
+/*  Define the background color for table head  */
+.Table tr:nth-child(1){ 
+	background: #f1d0e7;
+}
+
+
+/* Database Table Settings */
+/* PLEASE ADJUST TO OVERALL SCHEME! */
+.DBTable{
+/* 	width:100%;  */
+	border-collapse:collapse; 
+}
+.DBTable td{ 
+	padding:2px; border:#4e95f4 1px solid;
+}
+/* provide some minimal visual accomodation for IE8 and below */
+.DBTable tr{
+	background: default;
+}
+/*  Define the background color for all the ODD background rows  */
+.DBTable tr:nth-child(odd){ 
+	background: inherit;
+}
+/*  Define the background color for all the EVEN background rows  */
+.DBTable tr:nth-child(even){
+	background: inherit;
+}
+/*  Define the background color for table head  */
+.DBTable tr:nth-child(1){ 
+	background: inherit;
+}
+
+/* Tracker Table Settings */
+/* PLEASE ADJUST TO OVERALL SCHEME! */
+.TrTable{
+	width:inherit; 
+	border-collapse:collapse; 
+}
+.TrTable td{ 
+	padding:2px; border:#4e95f4 1px solid;
+}
+/* provide some minimal visual accomodation for IE8 and below */
+.TrTable tr{
+	background: default;
+}
+/*  Define the background color for all the ODD background rows  */
+.TrTable tr:nth-child(odd){ 
+	background: #b8d1f3;
+}
+/*  Define the background color for all the EVEN background rows  */
+.TrTable tr:nth-child(even){
+	background: #dae5f4;
+}
+/*  Define the background color for table head  */
+.TrTable tr:nth-child(1){ 
+	background: #f1d0e7;
+}
+
+
+/* Tracker Table Settings */
+/* PLEASE ADJUST TO OVERALL SCHEME! */
+.ResTable{
+	width:inherit; 
+	border-collapse:collapse; 
+}
+.ResTable td{ 
+	padding:2px; border:#4e95f4 1px solid;
+}
+/* provide some minimal visual accomodation for IE8 and below */
+.ResTable tr{
+	background: default;
+}
+/*  Define the background color for all the ODD background rows  */
+.ResTable tr:nth-child(odd){ 
+	background: #b8d1f3;
+}
+/*  Define the background color for all the EVEN background rows  */
+.ResTable tr:nth-child(even){
+	background: #dae5f4;
+}
+/*  Define the background color for table head  */
+.ResTable tr:nth-child(1){ 
+	background: #f1d0e7;
+}
+
+.FormTable{
+	width:80%; 
+	border-collapse:collapse; 
+}
+.FormTable td{ 
+	padding:2px; border:#4e95f4 1px solid;
+}
+/* provide some minimal visual accomodation for IE8 and below */
+.FormTable tr{
+	background: default;
+}
+/*  Define the background color for all the ODD background rows  */
+.FormTable tr:nth-child(odd){ 
+	background: #b8d1f3;
+}
+/*  Define the background color for all the EVEN background rows  */
+.FormTable tr:nth-child(even){
+	background: #dae5f4;
+}
+/*  Define the background color for table head  */
+.FormTable tr:nth-child(1){ 
+	background: #f1d0e7;
+}
+
+/* userCake stuff */
+#content #main {
+	float:left;
+	width:85%;
+	font-size:90%;
+}
+
+#content #main #regbox {
+	padding: 0 0 0 0;
+}
+
+#content #main #regbox label {
+/* 	width:100px; */
+	float:left;
+}
+
+#error {
+	display:block;
+	margin:5px;
+	color:#4d4948;
+	background-color:#fffebe;
+	border: 1px solid #cbcbcb;
+	font-size:90%;
+}
+
+#success {
+	margin:5px;
+	color:#4d4948;
+	background-color:#bce9b5;
+	border: 1px solid #7ace6c;
+	font-size:90%;
+}
