@@ -1,4 +1,4 @@
-# website
+# Mirror Worlds website
 This is mirror world's website repository. The website base is created using a softare called mobirise.  
 First version deployed Jan.27 2017. Current version deployed Mar. 22 2017.
 
