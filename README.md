@@ -7,7 +7,8 @@ First version deployed Jan.27 2017. Current version deployed Mar. 22 2017.
 -use template.html to create new pages.  
 
 # What's new
-Mar 28 Created mirror worlds challenge page initial comit and link from cv.html
+Apr 4 Finished initial structure of challenge page
+Mar 28 Created mirror worlds challenge page initial comit 
 
 # TODO
 -Create a separate folder for main site. Q:navigate to main page?

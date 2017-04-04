@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mirror Worlds Challenge</title>
+<meta name="description" content="Multiple Object Tracking: Datasets, Benchmarks, Challenges and more.">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/bmtt.css" />
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 250px;
+        /*padding-bottom: 70px;*/
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }  
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn"t work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- End of head -->
+
+<body>
+ 
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+     
+        <div class="jumbotron" style=" background-image: url(img/hero_mod_3.svg);background-color: #f8f8f8;background-repeat: no-repeat;
+    background-size: 1200px;
+    background-position: 50% 50%;
+    position: relative;">
+        <!--apple good need mod <div class="jumbotron" style=" background-image: url(img/archive/hero_original.svg);background-color: #f8f8f8;background-repeat: no-repeat;
+    background-size: 1200px;
+    background-position: 50% 0;
+    position: relative;">-->
+        <!-- old
+<div class="jumbotron" style="background-image:url(img/hero2.svg);background-size:cover ;height:100%;width:100%; background-position: center; background-repeat: no-repeat; text-shadow: 0px 2px 3px #555;">
+-->
+      </div>
+   
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  
+    <li>
+                        <a href="index.html"><i class="glyphicon glyphicon-home"></i> home</a>
+            </li>
+                    
+                    <li>
+                        <a href="details.html"><i class="glyphicon glyphicon-info-sign"></i> Details</a>
+            </li>
+
+<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="glyphicon glyphicon-download"></i> data<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="detection.html">Detection <span class="label label-info">NEW</span></a></li>
+              <li><a href="">Multi Object Tracking <span class="label label-info">NEW</span></a></li>
+              <li><a href="">Multi Cam <span class="label label-info">NEW</span></a></li>
+              <li><a href="devkit.html">DevKit</a></li>            
+          </ul>
+        </li>
+
+
+<li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown"> <i class="glyphicon glyphicon-list"></i> results<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="results-detection.html">Detection <span class="label label-info">NEW</span></a></li>
+              <li><a href="">Multi Object Tracking <span class="label label-info">NEW</span></a></li>
+              <li><a href="">Multi Cam <span class="label label-info">NEW</span></a></li>
+              <li><a href="devkit.html">DevKit</a></li>
+          </ul>
+        </li>
+
+                            <li>
+                       <a href="faq.html"><i class="glyphicon glyphicon-question-sign"></i> FAQ</a>
+                    </li>
+                    <li>
+                        <a href="people.html"><i class="glyphicon glyphicon-user"></i> people</a>
+                    </li>
+
+                </ul>
+                
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+   <!-- Page Content -->
+    <div class="container">
+            
+            
+<div class="row">
+      <div class="col-lg-12 text-center">
+	<h1>Detection Results</h1></div></div>
+<div class="row">
+<div class="col-lg-12 text-center">
+<p>Click on a measure to sort the table accordingly. See <a href="#metrics">below</a> for a more detailed description.</p><div class="row"><div class="col-lg-3 text-center"></div><form class="form-inline" role="form_filter" action="http://motchallenge.net/results/2D_MOT_2015/" method="get"><div class="col-lg-3 text-center">
+<div class="form-group">
+    <label>Detections:</label>
+		
+<select class="form-control" name="det">
+  <option>Public</option>
+	<option>Private</option>
+	<option>All</option>
+	</select>
+  </div></div><div class="col-lg-3 text-center"><button type="submit" class="btn btn-default">Filter</button></div></form></div><br><div class="table-responsive"><table class='table table-striped table-hover table-condensed'>
+<p><b>Showing only entries that use public detections!</b></p><tr class="info"><small><td style="white-space: nowrap" class="text-left"><strong><a href='?chl=2&orderBy=short_name&orderStyle=DESC&det=Public'><abbr title="Click on a tracker name to learn more">Tracker</abbr></a></strong></td><td style="white-space: nowrap" class="text-center"><strong><abbr title="Average rank taking all metrics into account">Avg Rank</abbr></strong></td><td style="white-space: nowrap" class="text-right"><strong><i class="glyphicon glyphicon-arrow-up" title="Higher is better"></i><a href='?chl=2&orderBy=MOTA&orderStyle=DESC&det=Public'><abbr title="Multi-Object Tracking Accuracy (+/- denotes standard deviation across all sequences)">MOTA</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=MOTP&orderStyle=DESC&det=Public'><abbr title="Multi-Object Tracking Precision">MOTP</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=FAR&orderStyle=DESC&det=Public'><abbr title="False Alarms per Frame">FAF</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=MT&orderStyle=DESC&det=Public'><abbr title="Ratio of Mostly Tracked Trajectories">MT</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=ML&orderStyle=DESC&det=Public'><abbr title="Ratio of Mostly Lost Trajectories">ML</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=FP&orderStyle=DESC&det=Public'><abbr title="Number of False Positives">FP</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=FN&orderStyle=DESC&det=Public'><abbr title="Number of False Negatives">FN</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=IDSW&orderStyle=DESC&det=Public'><abbr title="Number of Identity Switches (ID switch ratio = #ID switches / recall)">ID Sw.</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=FM&orderStyle=DESC&det=Public'><abbr title="Number of Track Fragmentations  (FM ratio = #FM / recall)">Frag</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=runtime&orderStyle=DESC&det=Public'><abbr title="Tracker speed in frames per second">Hz</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><abbr title="Which detector was used?">Detector</abbr></strong></td></small>
+</tr>
+<tr>
+<td rowspan='2' class='text-left'><a href='#'><abbr title="Appearance Model with R-CNN"><strong>void</strong></abbr></a><br>1.  </td><td class="text-center">1.0 </td><td class='text-right'><div style='float:left;width:50%;'><b>0</b></div><div style='float:right;width:50%;'><font size='1'>&plusmn;0</font></div></td><td class='text-right'>0</td><td class='text-right'>0</td><td class='text-right'>0 </td><td class='text-right'>0 </td><td class='text-right'>0</td><td class='text-right'>0</td><td class='text-right'>0<font size='1'>(0)</font></td><td class='text-right'>0 <font size='1'>(0)</font></td><td class='text-right'>30</td><td class='text-right'><abbr title='This submission used the provided detection set.'><font size='2'><strong>Public</strong></font></abbr></td></tr>
+<tr>
+		
+		<td style="line-height: 10px;" align="right" colspan="12"><font size="1">Anonymous submission</font></th>
+    
+
+
+    		</tr></table></div></div></div>
+<div class="row">
+<div class="col-lg-12 text-center">
+</div></div><hr>
+
+<div class="row text-center">
+<div class="col-md-offset-2 col-md-8">
+<h2 style="padding-top: 100px; margin-top: -100px;" id="metrics">Evaluation Measures</h2><span class="text-warning">Lower is better. </span><span class="text-info">Higher is better.</span><table class="table table-striped table-hover text-left">
+
+<tr class="info">
+<td><strong>Measure</strong></td>
+<td><strong>Better</strong></td>
+<td><strong>Perfect</strong></td>
+<td><strong>Description</strong></td>
+</tr><tr class="text-warning">
+<td nowrap><strong>Avg Rank</strong></td>
+<td>lower</td>
+<td>1</td>
+<td>This is the rank of each tracker averaged over all present evaluation measures.
+</td>
+</tr><tr class="text-info">
+<td><strong>MOTA</strong></td>
+<td>higher</td>
+<td>100 %</td>
+<td>Multiple Object Tracking Accuracy <span class="bibtex-cite"><span class="bibtex-list bibtex-numeric"><span class="bibtex-list-start">[</span><span class="bibtex-ref bibtex-key-Bernardin_2008_CLE">1</span><span class="bibtex-list-end">]</span></span></span>. This measure combines three error sources: false positives, missed targets and identity switches.</td>
+</tr><tr class="text-info">
+<td><strong>MOTP</strong></td>
+<td>higher</td>
+<td>100 %</td>
+<td>Multiple Object Tracking Precision <span class="bibtex-cite"><span class="bibtex-list bibtex-numeric"><span class="bibtex-list-start">[</span><span class="bibtex-ref bibtex-key-Bernardin_2008_CLE">1</span><span class="bibtex-list-end">]</span></span></span>. The misalignment between the annotated and the predicted bounding boxes.</td>
+</tr><tr class="text-warning">
+<td><strong>FAF</strong></td>
+<td>lower</td>
+<td>0</td>
+<td>The average number of false alarms per frame.</td>
+</tr><tr class="text-info">
+<td><strong>MT</strong></td>
+<td>higher</td>
+<td>100 %</td>
+<td>Mostly tracked targets. The ratio of ground-truth trajectories that are covered by a track hypothesis for at least 80% of their respective life span.</td>
+</tr><tr class="text-warning">
+<td><strong>ML</strong></td>
+<td>lower</td>
+<td>0 %</td>
+<td>Mostly lost targets. The ratio of ground-truth trajectories that are covered by a track hypothesis for at most 20% of their respective life span.</td>
+</tr><tr class="text-warning">
+<td><strong>FP</strong></td>
+<td>lower</td>
+<td>0</td>
+<td>The total number of false positives.</td>
+</tr><tr class="text-warning">
+<td><strong>FN</strong></td>
+<td>lower</td>
+<td>0</td>
+<td>The total number of false negatives (missed targets).</td>
+</tr><tr class="text-warning">
+<td><strong>ID Sw.</strong></td>
+<td>lower</td>
+<td>0</td>
+<td>The total number of identity switches. Please note that we follow the stricter definition of identity switches as described in <span class="bibtex-cite"><span class="bibtex-list bibtex-numeric"><span class="bibtex-list-start">[</span><span class="bibtex-ref bibtex-key-Li_2009_CVPR">2</span><span class="bibtex-list-end">]</span></span></span>.</td>
+</tr><tr class="text-warning">
+<td><strong>Frag</strong></td>
+<td>lower</td>
+<td>0</td>
+<td>The total number of times a trajectory is fragmented (i.e. interrupted during tracking).</td>
+</tr><tr class="text-info">
+<td><strong>Hz</strong></td>
+<td>higher</td>
+<td>Inf.</td>
+<td>Processing speed (in frames per second excluding the detector) on the benchmark.</td>
+</tr></table></div></div>
+    
+    
+<br><br>
+        
+        <!-- footer -->
+        <div class="container">
+                    <div class="center-block">
+       <a class="navbar-brand" href="http://icat.vt.edu/"><img src="img/icat.jpg" height="50" class="d-inline-block align-top"></a>
+       <a class="navbar-brand"><img src="img/nsf.png" height="50"></a>   
+       <a class="navbar-brand"><img alt="Creative Commons License" style="border-width:0;float:left;margin-right:10px;" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" height="30"></a>
+       <a class="navbar-brand"><a><i class="glyphicon glyphicon-envelope"></i> by Nuo Ma</a></a><br>  
+           
+           <p>Design courtesy : motchallenge.net & Apple Inc.</p/><br>
+                        
+</div>
+    </div>
+
+     
+        <!-- /.container -->
+    
+
+    
+
+
+
+<!-- jQuery Version 1.11.0 -->
+<script src='js/jquery-1.11.0.js'></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src='js/bootstrap.min.js'></script>   
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91771580-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+</body>
+</html>
