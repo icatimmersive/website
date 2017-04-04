@@ -36,7 +36,17 @@
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
      
-<div class="jumbotron" style="background-image:url(img/hero2.svg);height:100%;width:100%; background-position: center; background-repeat: no-repeat; text-shadow: 0px 2px 3px #555;">
+        <div class="jumbotron" style=" background-image: url(img/hero.svg);background-color: #f8f8f8;background-repeat: no-repeat;
+    background-size: 900px;
+    background-position: 50% 0;
+    position: relative;">
+        <!--apple good need mod <div class="jumbotron" style=" background-image: url(img/archive/hero_original.svg);background-color: #f8f8f8;background-repeat: no-repeat;
+    background-size: 1200px;
+    background-position: 50% 0;
+    position: relative;">-->
+        <!-- old
+<div class="jumbotron" style="background-image:url(img/hero2.svg);background-size:cover ;height:100%;width:100%; background-position: center; background-repeat: no-repeat; text-shadow: 0px 2px 3px #555;">
+-->
       </div>
    
         <div class="container">
@@ -57,25 +67,37 @@
     <li>
                         <a href="/"><i class="glyphicon glyphicon-home"></i> home</a>
             </li>
+                    
+                    <li>
+                        <a href="/"><i class="glyphicon glyphicon-info-sign"></i> Details</a>
+            </li>
 
 <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="glyphicon glyphicon-download"></i> data<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu"><li><a href="/data/2D_MOT_2015/">2D MOT 2015</a></li><li><a href="/data/3D_MOT_2015/">3D MOT 2015</a></li><li><a href="/data/MOT16/">MOT16</a></li><li><a href="/data/MultiCam/">MultiCam</a></li><li><a href="/data/PETS2017/">PETS2017 <span class="label label-info">NEW</span></a></li><li><a href="/data/MOT17Det/">MOT17Det <span class="label label-info">NEW</span></a></li><li><a href="/data/MOT17/">MOT17 <span class="label label-info">NEW</span></a></li><li><a href="/devkit/">DevKit</a></li>            
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="">Detection <span class="label label-info">NEW</span></a></li>
+              <li><a href="">Multi Object Tracking <span class="label label-info">NEW</span></a></li>
+              <li><a href="">Multi Cam <span class="label label-info">NEW</span></a></li>
+              <li><a href="">DevKit</a></li>            
           </ul>
         </li>
 
 
 <li class="dropdown">
           <a href="" class="dropdown-toggle" data-toggle="dropdown"> <i class="glyphicon glyphicon-list"></i> results<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu"><li><a href="/results/2D_MOT_2015/">2D MOT 2015</a></li><li><a href="/results/3D_MOT_2015/">3D MOT 2015</a></li><li><a href="/results/MOT16/">MOT16</a></li><li><a href="/results/MultiCam/">MultiCam</a></li><li><a href="/results/PETS2017/">PETS2017 <span class="label label-info">NEW</span></a></li>            
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="">Detection <span class="label label-info">NEW</span></a></li>
+              <li><a href="">Multi Object Tracking <span class="label label-info">NEW</span></a></li>
+              <li><a href="">Multi Cam <span class="label label-info">NEW</span></a></li>
+              <li><a href="">DevKit</a></li>
           </ul>
         </li>
 
                             <li>
-                       <a><i class="glyphicon glyphicon-question-sign"></i> FAQ</a>
+                       <a href="#"><i class="glyphicon glyphicon-question-sign"></i> FAQ</a>
                     </li>
                     <li>
-                        <a href="http://icat.vt.edu/mirrorworlds/people.html"><i class="glyphicon glyphicon-user"></i> people</a>
+                        <a href="#"><i class="glyphicon glyphicon-user"></i> people</a>
                     </li>
 
                 </ul>
@@ -90,7 +112,8 @@
     
     <div class="container">
 
-        
+
+    <!-- first title -->
             <div class="row">
     <div class="col-md-12 text-justify">
      <h2>Welcome to Mirror Worlds Challenge</h2>
@@ -99,26 +122,97 @@
       </div>
 
       
-    
+     <!-- first paragraph -->
             <div class="row">
     <div class="col-md-12 text-justify">
                
                 <p class="lead">      
                
-     <small> this is mirror worlds challenge</small>
+     <small> Mirror Worlds is an NSF funded infrastructure project at Virginia Tech ICAT, focused on creating a computing infrastructure for research in mixed reality and smart environment. <a href="http://icat.vt.edu/mirrorworlds/">More details here.</a><br/><br/>
+    </small>
+                    
+     <small>We created this infrastructure. Moss Art Center building at Virginia Tech, Blacksburg VA. And since there are no similar existed, we created this Mirror Worlds challenge, dedicated in computer vision detection and tracking challenge. </small><br/>
                 </p>
+        <table width=80% align="center">
+        <tr>
+          <td width=60%>
+		    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ewkh8Us6Cwc?ecver=1" frameborder="0" allowfullscreen></iframe>            
+          </td >
+          <td width=40%>
+ 
+            <ul class="note">
+
+             <li class="note"> 35 ceiling mount fisheye cameras with known geometry.</li>
+                 <li class="note"> Real world environment with occlusions and diverse appearance.</li>
+             <li class="note"> Detection and tracking in real time.</li>
+                <li class="note"> Both real and synthetic dataset.</li>
+               
+           </ul>
+           
+          </td>
+        </tr>
+      </table>
             </div>
+                
+                      
+                
+                
         </div><!-- /.row -->        
     
+        <div class='row'>
+            <div class='col-lg-12 text-left'>      
 
-  <!-- NSF -->
+            <h2 id='newsletter'>Dataset Example</h2>
+<hr style='height:1px;margin-left: 0;width:100%;margin-top: 0.5em;color:#FF8000;background-color:#FF8000;' />
+
+            <img   src="img/hallway.jpg" width="220"  class="img-thumbnail">
+            <img   src="img/unity.jpg" width="200" height="150"class="img-thumbnail">
+            <img  src="img/obs.jpg" width="240" height="150"class="img-thumbnail">
+
+            </div>
+
+    </div>
+
+
+        <!-- news -->
         <br>
 
+        <div class="row">
+	<div class="col-md-12 text-justify">
+		 <h2>What's new</h2>
+<hr style="height:1px;margin-left: 0;width:100%;margin-top: 0.5em;color:#FF8000;background-color:#FF8000;" />
+          
+                <p class="lead"> <big>    
+		<ul>
+<tr><li>Apr 1, 2017: Our initial challenge website is online: <a href="http://icat.vt.edu/mirrorworlds/">here</a></li>
+<tr><li>Jan 27, 2017: Our Mirror Worlds website is online: <a href="http://icat.vt.edu/mirrorworlds/">here</a></li> 
+
+		</ul>
+</big>
+                </p>
+            </div>
+        </div><!-- /.row -->   
+        
+<!-- privacy -->
+        <br>
+
+        <div class="row">
+	<div class="col-md-12 text-justify">
+		 <h2>Privacy</h2>
+<hr style="height:1px;margin-left: 0;width:100%;margin-top: 0.5em;color:#FF8000;background-color:#FF8000;" />
+          
+                <p>We value your privacy. This dataset is for academic research only. IRB pending.</p>
+            </div>
+        </div><!-- /.row -->  
+        
+
+        
+  <!-- NSF -->      
         <div class='row'>
             <div class='col-lg-12 text-left'>      
 
             <h2 id='newsletter'>Acknowledgement</h2>
-<hr style='height:1px;margin-left: 0;width:13%;margin-top: 0.5em;color:#FF8000;background-color:#FF8000;' />
+<hr style='height:1px;margin-left: 0;width:100%;margin-top: 0.5em;color:#FF8000;background-color:#FF8000;' />
 
             <p>This research is supported by the National Science Foundation under Grant No. 1305231</p>
 
@@ -132,17 +226,16 @@
     
 
 
-<br><br><br>
+<br><br>
+        
+        <!-- footer -->
         <div class="container">
                     <div class="center-block">
-      <a class="navbar-brand" href="http://icat.vt.edu/"><img src="img/icat.jpg" height="50"></a>
+       <a class="navbar-brand" href="http://icat.vt.edu/"><img src="img/icat.jpg" height="50" class="d-inline-block align-top"></a>
        <a class="navbar-brand"><img src="img/nsf.png" height="50"></a>   
-       <img alt="Creative Commons License" style="border-width:0;float:left;margin-right:10px;" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png">
-            
-<p class="navbar-text"> <a><i class="glyphicon glyphicon-envelope"></i> Contact</a>
-        
-
-</p>
+       <a class="navbar-brand"><img alt="Creative Commons License" style="border-width:0;float:left;margin-right:10px;" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" height="50"></a>
+       <a class="navbar-brand"><a><i class="glyphicon glyphicon-envelope"></i> Contact</a>  by Nuo Ma.</a>
+                        
 </div>
     </div>
 

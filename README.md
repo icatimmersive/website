@@ -10,6 +10,10 @@ First version deployed Jan.27 2017. Current version deployed Mar. 22 2017.
 Mar 28 Created mirror worlds challenge page initial comit and link from cv.html
 
 # TODO
+-Create a separate folder for main site. Q:navigate to main page?
+-separate main website readme with challenge website readme
+-challenge footer div center not implemented.
+-get rid of all copy rights at footer, modify at next major template upgrade.
 -add google analytics to all pages
 -page style edits, especially like overview.html and cv.html  
 -content edits  
