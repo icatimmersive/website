@@ -13,10 +13,22 @@
     <!-- Custom CSS -->
     <style>
         body {
-            padding-top: 250px;
+            padding-top: 0px;
             /*padding-bottom: 70px;*/
             /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+            
         }
+        .back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+        .affix {
+  top: 0px;
+  width:100%;
+}
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,11 +43,11 @@
 <!-- End of head -->
 
 <body>
+    
+    <nav class="navbar  navbar-fixed-top" role="navigation">
+    </nav>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-
-        <div class="jumbotron" style=" background-image: url(img/hero_mod_3.svg);background-color: #f8f8f8;background-repeat: no-repeat;
+    <div class="jumbotron" style=" background-image: url(img/hero_mod_3.svg);background-color: #f8f8f8;background-repeat: no-repeat;
     background-size: 1200px;
     background-position: 50% 50%;
     position: relative;">
@@ -47,6 +59,13 @@
 <div class="jumbotron" style="background-image:url(img/hero2.svg);background-size:cover ;height:100%;width:100%; background-position: center; background-repeat: no-repeat; text-shadow: 0px 2px 3px #555;">
 -->
         </div>
+    
+        
+        
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse  navbar-lower" role="navigation">
+
+       
 
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -248,7 +267,7 @@
 
         <!-- /.container -->
 
-
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
 
 
@@ -272,7 +291,36 @@
             ga('send', 'pageview');
 
         </script>
-
+        
+         <!-- scroll to top -->
+        <script>
+        $(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+        
+        });
+            
+</script>
+        <script>
+            $('.navbar-lower').affix({
+  offset: {top: 50}
+});
+        </script>
 </body>
 
 </html>
