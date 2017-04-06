@@ -13,12 +13,11 @@
     <!-- Custom CSS -->
     <style>
         body {
-            padding-top: 00px;
+            /* padding-top: 0px; */
             /*padding-bottom: 70px;*/
             /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-            margin-top: 0px;
-        }
-        
+            }
+     
         .back-to-top {
             cursor: pointer;
             position: fixed;
@@ -27,10 +26,6 @@
             display:none;
         }
        
-        .affix {
-            top: 0px;
-            width:100%;
-        }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -45,28 +40,12 @@
 <!-- End of head -->
 
 <body>
+   <div class="jumbotron" style=" background-image: url(img/hero_mod_3.svg);background-color: #f8f8f8;background-repeat: no-repeat;
+    background-size: 1200px; background-position: 50% 50%; position: relative;">
+    </div>
     
-    <nav class="navbar navbar-fixed-top" role="navigation">
-    </nav>
-
-    <div class="jumbotron" style=" background-image: url(img/hero_mod_3.svg);background-color: #f8f8f8;background-repeat: no-repeat;
-    background-size: 1200px;
-    background-position: 50% 50%;
-    position: relative;">
-            <!--apple good need mod <div class="jumbotron" style=" background-image: url(img/archive/hero_original.svg);background-color: #f8f8f8;background-repeat: no-repeat;
-    background-size: 1200px;
-    background-position: 50% 0;
-    position: relative;">-->
-            <!-- old
-<div class="jumbotron" style="background-image:url(img/hero2.svg);background-size:cover ;height:100%;width:100%; background-position: center; background-repeat: no-repeat; text-shadow: 0px 2px 3px #555;">
--->
-        </div>
-    
-        
-        
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-inverse navbar-lower" role="navigation" style="z-index:1">
-
+    <nav class="navbar navbar-inverse navbar-lower" role="navigation" >        
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -248,21 +227,23 @@
 
 
         <br><br>
+        
 
-        <!-- footer -->
-        <div class="container">
-            <div class="center-block">
-                <a class="navbar-brand" href="http://icat.vt.edu/"><img src="img/icat.jpg" height="50" class="d-inline-block align-top"></a>
-                <a class="navbar-brand"><img src="img/nsf.png" height="50"></a>
-                <a class="navbar-brand"><img alt="Creative Commons License" style="border-width:0;float:left;margin-right:10px;" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png"
+
+                <div class="container">
+                    <div class="center-block">
+                    <a class="navbar-brand" href="http://icat.vt.edu/"><img src="img/icat.jpg" height="50" class="d-inline-block align-top"></a>
+                    <a class="navbar-brand"><img src="img/nsf.png" height="50"></a>
+                    <a class="navbar-brand"><img alt="Creative Commons License" style="border-width:0;float:left;margin-right:10px;" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png"
                         height="30"></a>
-                <a class="navbar-brand"><a><i class="glyphicon glyphicon-envelope"></i> by Nuo Ma</a></a><br>
+                    <a class="navbar-brand"><a><i class="glyphicon glyphicon-envelope"></i> by Nuo Ma</a></a><br>
 
-                <p>Design courtesy : motchallenge.net & Apple Inc.
-                    </p/><br>
+                <p>Design courtesy : motchallenge.net & Apple Inc.</p><br>
 
-            </div>
-        </div>
+                    </div>
+                </div>
+
+        
 
 
         <!-- /.container -->
@@ -316,11 +297,7 @@
         });
             
 </script>
-        <script>
-            $('.navbar-lower').affix({
-                offset: {top: 220}
-            });
-        </script>
+ 
 </body>
 
 </html>
