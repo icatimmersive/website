@@ -13,22 +13,24 @@
     <!-- Custom CSS -->
     <style>
         body {
-            padding-top: 0px;
+            padding-top: 00px;
             /*padding-bottom: 70px;*/
             /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-            
+            margin-top: 0px;
         }
+        
         .back-to-top {
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display:none;
-}
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display:none;
+        }
+       
         .affix {
-  top: 0px;
-  width:100%;
-}
+            top: 0px;
+            width:100%;
+        }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -44,7 +46,7 @@
 
 <body>
     
-    <nav class="navbar  navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-fixed-top" role="navigation">
     </nav>
 
     <div class="jumbotron" style=" background-image: url(img/hero_mod_3.svg);background-color: #f8f8f8;background-repeat: no-repeat;
@@ -63,9 +65,7 @@
         
         
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse  navbar-lower" role="navigation">
-
-       
+    <nav class="navbar navbar-default navbar-inverse navbar-lower" role="navigation" style="z-index:1">
 
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -270,7 +270,7 @@
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
 
-
+    </div>
 
         <!-- jQuery Version 1.11.0 -->
         <script src='js/jquery-1.11.0.js'></script>
@@ -318,8 +318,8 @@
 </script>
         <script>
             $('.navbar-lower').affix({
-  offset: {top: 50}
-});
+                offset: {top: 220}
+            });
         </script>
 </body>
 
