@@ -11,11 +11,13 @@ Apr 4 Finished initial structure of challenge page
 Mar 28 Created mirror worlds challenge page initial comit 
 
 # TODO
--Create a separate folder for main site. Q:navigate to main page?
--separate main website readme with challenge website readme
--challenge footer div center not implemented.
--get rid of all copy rights at footer, modify at next major template upgrade.
--add google analytics to all pages
+-challenge site make banner not fixed   
+-challenge site add return to top.(mod in css and js)   
+-Create a separate folder for main site. Q:navigate to main page?  
+-separate main website readme with challenge website readme  
+-challenge footer div center not implemented.  
+-get rid of all copy rights at footer, modify at next major template upgrade.  
+-add google analytics to all pages  
 -page style edits, especially like overview.html and cv.html  
 -content edits  
 -tidy folder structures
