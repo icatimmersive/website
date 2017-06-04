@@ -23,4 +23,17 @@ Mar 28 Created mirror worlds challenge page initial comit
 -content edits  
 -tidy folder structures
 
+# Future reference
+
+-Apple WWDC 2016 hero image.
+
+
+-Apple website hero background video.    
+-Apple website transparent SVG font [img].  
+<img width="1440" alt="screenshot 2017-06-03 20 29 12" src="https://cloud.githubusercontent.com/assets/9259412/26757938/cbc2f860-489b-11e7-8a95-069a5d80d36b.png"> 
+
+-Apple website gradient color background [img]. 
+<img width="1440" alt="screenshot 2017-06-03 20 30 32" src="https://cloud.githubusercontent.com/assets/9259412/26757936/c8af061e-489b-11e7-9aa2-351294de9e5f.png">
+
+
 
