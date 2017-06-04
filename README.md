@@ -10,6 +10,8 @@ First version deployed Jan.27 2017. Current version deployed Mar. 22 2017.
 Jun 4 Testlab folder created for future directions.  
 	  Hero v2 (high render 6000*3000) and gradient change in index and overview.  
 	  Application page changed with gradients, footer and google script.  
+	  People and overview page changed.
+      Index hero image too big.
 Apr 6 Challenge site make banner not fixed.(delete fixed top banner and abstract jumbotron div before nav tag)      
 Apr 6 Challenge site add return to top, in challenge index only, mod css and js.    
 Apr 4 Finished initial structure of challenge page
