@@ -2,9 +2,8 @@
 Website future  directions.
 
 - [done] Apple WWDC 2016 hero image for MW challenge hero background.  
-- Apple website hero background video.      
-- Apple website transparent SVG font [img].   
-<img width="1440" alt="screenshot 2017-06-03 20 29 12" src="https://cloud.githubusercontent.com/assets/9259412/26757938/cbc2f860-489b-11e7-8a95-069a5d80d36b.png"> 
+
+- [done] Index hero set to youtube LIVE stream
 
 -Apple website gradient color background. 
 <img src="https://cloud.githubusercontent.com/assets/9259412/26764323/abeec98c-4932-11e7-9eae-b6dcbf5b2f7c.png">
