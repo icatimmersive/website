@@ -71,26 +71,14 @@
                         <a href="details.html"><i class="glyphicon glyphicon-info-sign"></i> Details</a>
             </li>
 
-<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="glyphicon glyphicon-download"></i> data<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-              <li><a href="detection.html">Detection <span class="label label-info">NEW</span></a></li>
-              <li><a href="">Multi Object Tracking <span class="label label-info">NEW</span></a></li>
-              <li><a href="">Multi Cam <span class="label label-info">NEW</span></a></li>
-              <li><a href="devkit.html">DevKit</a></li>            
-          </ul>
-        </li>
+                   <li>
+                        <a href="data.html"><i class="glyphicon glyphicon-list"></i>Data</a>
+                    </li>
 
 
-<li class="dropdown">
-          <a href="" class="dropdown-toggle" data-toggle="dropdown"> <i class="glyphicon glyphicon-list"></i> results<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-              <li><a href="results-detection.html">Detection <span class="label label-info">NEW</span></a></li>
-              <li><a href="">Multi Object Tracking <span class="label label-info">NEW</span></a></li>
-              <li><a href="">Multi Cam <span class="label label-info">NEW</span></a></li>
-              <li><a href="devkit.html">DevKit</a></li>
-          </ul>
-        </li>
+                   <li>
+                        <a href="results.html"><i class="glyphicon glyphicon-list"></i> results</a>
+                    </li>
 
                             <li>
                        <a href="faq.html"><i class="glyphicon glyphicon-question-sign"></i> FAQ</a>
@@ -113,30 +101,40 @@
             
 <div class="row">
       <div class="col-lg-12 text-center">
-	<h1>Detection Results</h1></div></div>
+	<h1>Initial Results</h1></div></div>
 <div class="row">
 <div class="col-lg-12 text-center">
-<p>Click on a measure to sort the table accordingly. See <a href="#metrics">below</a> for a more detailed description.</p><div class="row"><div class="col-lg-3 text-center"></div><form class="form-inline" role="form_filter" action="http://motchallenge.net/results/2D_MOT_2015/" method="get"><div class="col-lg-3 text-center">
-<div class="form-group">
-    <label>Detections:</label>
-		
-<select class="form-control" name="det">
-  <option>Public</option>
-	<option>Private</option>
-	<option>All</option>
-	</select>
-  </div></div><div class="col-lg-3 text-center"><button type="submit" class="btn btn-default">Filter</button></div></form></div><br><div class="table-responsive"><table class='table table-striped table-hover table-condensed'>
-<p><b>Showing only entries that use public detections!</b></p><tr class="info"><small><td style="white-space: nowrap" class="text-left"><strong><a href='?chl=2&orderBy=short_name&orderStyle=DESC&det=Public'><abbr title="Click on a tracker name to learn more">Tracker</abbr></a></strong></td><td style="white-space: nowrap" class="text-center"><strong><abbr title="Average rank taking all metrics into account">Avg Rank</abbr></strong></td><td style="white-space: nowrap" class="text-right"><strong><i class="glyphicon glyphicon-arrow-up" title="Higher is better"></i><a href='?chl=2&orderBy=MOTA&orderStyle=DESC&det=Public'><abbr title="Multi-Object Tracking Accuracy (+/- denotes standard deviation across all sequences)">MOTA</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=MOTP&orderStyle=DESC&det=Public'><abbr title="Multi-Object Tracking Precision">MOTP</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=FAR&orderStyle=DESC&det=Public'><abbr title="False Alarms per Frame">FAF</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=MT&orderStyle=DESC&det=Public'><abbr title="Ratio of Mostly Tracked Trajectories">MT</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=ML&orderStyle=DESC&det=Public'><abbr title="Ratio of Mostly Lost Trajectories">ML</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=FP&orderStyle=DESC&det=Public'><abbr title="Number of False Positives">FP</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=FN&orderStyle=DESC&det=Public'><abbr title="Number of False Negatives">FN</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=IDSW&orderStyle=DESC&det=Public'><abbr title="Number of Identity Switches (ID switch ratio = #ID switches / recall)">ID Sw.</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=FM&orderStyle=DESC&det=Public'><abbr title="Number of Track Fragmentations  (FM ratio = #FM / recall)">Frag</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=runtime&orderStyle=DESC&det=Public'><abbr title="Tracker speed in frames per second">Hz</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><abbr title="Which detector was used?">Detector</abbr></strong></td></small>
+
+    <div class="row"><div class="col-lg-3 text-center"></div></div><br><div class="table-responsive"><table class='table table-striped table-hover table-condensed'>
+<tr class="info"><small><td style="white-space: nowrap" class="text-left"><strong><a href='?chl=2&orderBy=short_name&orderStyle=DESC&det=Public'><abbr title="Click on a tracker name to learn more">Tracker</abbr></a></strong></td><td style="white-space: nowrap" class="text-center"><strong><abbr title="Average rank taking all metrics into account">Avg Rank</abbr></strong></td><td style="white-space: nowrap" class="text-right"><strong><i class="glyphicon glyphicon-arrow-up" title="Higher is better"></i><a href='?chl=2&orderBy=MOTA&orderStyle=DESC&det=Public'><abbr title="Multi-Object Tracking Accuracy (+/- denotes standard deviation across all sequences)">MOTA</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=IDF1&orderStyle=DESC&det=Public'><abbr title="ID F1 Score">IDF1</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=MT&orderStyle=DESC&det=Public'><abbr title="Ratio of Mostly Tracked Trajectories">MT</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=ML&orderStyle=DESC&det=Public'><abbr title="Ratio of Mostly Lost Trajectories">ML</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=FP&orderStyle=DESC&det=Public'><abbr title="Number of False Positives">FP</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=FN&orderStyle=DESC&det=Public'><abbr title="Number of False Negatives">FN</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=IDSW&orderStyle=DESC&det=Public'><abbr title="Number of Identity Switches (ID switch ratio = #ID switches / recall)">ID Sw.</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=FM&orderStyle=DESC&det=Public'><abbr title="Number of Track Fragmentations  (FM ratio = #FM / recall)">Frag</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><a href='?chl=2&orderBy=runtime&orderStyle=DESC&det=Public'><abbr title="Tracker speed in frames per second">Hz</abbr></a></strong></td><td style="white-space: nowrap" class="text-right"><strong><abbr title="Which detector was used?">Detector</abbr></strong></td></small>
 </tr>
-<tr>
-<td rowspan='2' class='text-left'><a href='#'><abbr title="Appearance Model with R-CNN"><strong>void</strong></abbr></a><br>1.  </td><td class="text-center">1.0 </td><td class='text-right'><div style='float:left;width:50%;'><b>0</b></div><div style='float:right;width:50%;'><font size='1'>&plusmn;0</font></div></td><td class='text-right'>0</td><td class='text-right'>0</td><td class='text-right'>0 </td><td class='text-right'>0 </td><td class='text-right'>0</td><td class='text-right'>0</td><td class='text-right'>0<font size='1'>(0)</font></td><td class='text-right'>0 <font size='1'>(0)</font></td><td class='text-right'>30</td><td class='text-right'><abbr title='This submission used the provided detection set.'><font size='2'><strong>Public</strong></font></abbr></td></tr>
-<tr>
-		
-		<td style="line-height: 10px;" align="right" colspan="12"><font size="1">Anonymous submission</font></th>
+ 
+    <!-- list of results -->
+        <tr>
+<td rowspan='2' class='text-left'><strong>SORT</strong><br>1. <img src="img/online.svg" height="16" alt="online method" title="online method"> </td><td class="text-center">null </td><td class='text-right'><div style='float:left;width:50%;'><b>38.4</b></div></td><td class='text-right'>42.1</td><td class='text-right'>0 </td><td class='text-right'>1 </td><td class='text-right'><b>21</b></td><td class='text-right'>2715</td><td class='text-right'>41 </td><td class='text-right'>?</td><td class='text-right'>Joint~8</td><td class='text-right'><abbr title='This submission used the provided detection set.'><font size='2'><strong>YOLOv2 untrained</strong></font></abbr></td></tr>
+    <tr>
+        <td style="line-height: 10px;" align="right" colspan="11"><font size="1">Observation room 2 easy clip. Detection is untrained YOLOv2. SORT. <a href="https://www.youtube.com/watch?v=ziI2YpEyIBo">Result Video.</a>  </font></td>
+	</tr>
+    <!-- -->
+        <tr>
+<td rowspan='2' class='text-left'><strong>SORT</strong><br>1. <img src="img/online.svg" height="16" alt="online method" title="online method"> </td><td class="text-center">null </td><td class='text-right'><div style='float:left;width:50%;'><b>3.6</b></div></td><td class='text-right'>6.9</td><td class='text-right'>0 </td><td class='text-right'>7 </td><td class='text-right'><b>83</b></td><td class='text-right'>3528</td><td class='text-right'>9 </td><td class='text-right'>?</td><td class='text-right'>Joint~8</td><td class='text-right'><abbr title='This submission used the provided detection set.'><font size='2'><strong>YOLOv2 untrained</strong></font></abbr></td></tr>
+    <tr>
+        <td style="line-height: 10px;" align="right" colspan="11"><font size="1">Hallway 3 clip. Detection is untrained YOLOv2. SORT. <a href="https://www.youtube.com/watch?v=nl6_-k20cN8">Result Video.</a></font></td>
+	</tr>
+    <!-- -->      
     
+    
+    <!-- example
 
+        <tr>
+<td rowspan='2' class='text-left'><strong>SORT</strong><br>1. <img src="img/online.svg" height="16" alt="online method" title="online method"> </td><td class="text-center">null </td><td class='text-right'><div style='float:left;width:50%;'><b>MOTA</b></div></td><td class='text-right'>IDF1</td><td class='text-right'>MT </td><td class='text-right'>ML </td><td class='text-right'><b>FP</b></td><td class='text-right'>FN</td><td class='text-right'>ID Swi </td><td class='text-right'>Frag</td><td class='text-right'>Hz</td><td class='text-right'><abbr title='This submission used the provided detection set.'><font size='2'><strong>YOLOv2 untrained</strong></font></abbr></td></tr>
+    <tr>
+        <td style="line-height: 10px;" align="right" colspan="11"><font size="1">Hallway 3 clip. Detection is untrained YOLOv2. SORT. </font></td>
+	</tr>
+  
+    -->
 
-    		</tr></table></div></div></div>
+</table></div></div></div>
 <div class="row">
 <div class="col-lg-12 text-center">
 </div></div><hr>
